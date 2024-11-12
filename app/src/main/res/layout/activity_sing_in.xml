@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingInActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:gravity="center"
+        android:text="Registrarse"
+        android:textColor="@color/naranja"
+        android:textFontWeight="800"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:hint="Nombre"
+        android:textColorHint="@color/gris"
+        android:background="@drawable/edittext_border"
+        />
+
+    <EditText
+        android:id="@+id/etEmailR"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Usuario"
+        android:textColorHint="@color/gris"
+        android:background="@drawable/edittext_border"
+        />
+
+    <EditText
+        android:id="@+id/etPasswordR"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="Contraseña"
+        android:textColorHint="@color/gris"
+        android:background="@drawable/edittext_border"
+        />
+
+    <TextView
+        android:id="@+id/tvMessageR"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnRegR"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Registrar"
+        android:textSize="20dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/naranja"
+        />
+
+</LinearLayout>
