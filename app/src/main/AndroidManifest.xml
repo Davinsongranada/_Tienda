@@ -13,14 +13,11 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".product"
-            android:exported="false" />
-        <activity
-            android:name=".Product2"
-            android:exported="false"
-            android:theme="@style/Theme.MyApplication" />
-        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".SingInActivity"
@@ -38,7 +35,7 @@
             android:exported="false"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".product"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
