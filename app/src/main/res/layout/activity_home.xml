@@ -11,9 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Shop"
+        android:text="Tienda"
         android:textSize="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="20dp"
         android:fontFamily="@font/josefin_sans_semibold"
         android:textColor="@color/black"
@@ -44,7 +44,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="485dp"
+        android:layout_marginTop="590dp"
         android:background="@drawable/shadow_nav"
         android:backgroundTint="@color/white"
         android:elevation="5dp"
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:text="Enseres"
-                android:textSize="17dp"
+                android:textSize="14dp"
                 android:gravity="center"
                 android:textColor="@color/black"/>
         </LinearLayout>
@@ -94,8 +94,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="Home"
-                android:textSize="17dp"
+                android:text="Inicio"
+                android:textSize="14dp"
                 android:textColor="@color/black"/>
         </LinearLayout>
 
@@ -119,7 +119,7 @@
                 android:layout_height="20dp"
                 android:gravity="center"
                 android:text="Aparatos"
-                android:textSize="17dp"
+                android:textSize="14dp"
                 android:textColor="@color/black"/>
         </LinearLayout>
 
