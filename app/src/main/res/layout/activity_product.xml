@@ -10,21 +10,21 @@
     tools:context=".product">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/prueba"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
         android:background="@drawable/border_img"
+        android:scaleType="centerCrop"
+
         />
 
     <TextView
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:text="@string/producto"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="19dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         />
 
@@ -32,15 +32,15 @@
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:text="@string/precio"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="25dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         />
 
     <Button
         android:id="@+id/btnLogIn"
-        android:layout_width="327dp"
+        android:layout_width="400dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:text="Agregar al carrito"
@@ -54,7 +54,7 @@
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:text="@string/detallesProd"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:textSize="16dp"
         android:textStyle="bold"
@@ -64,7 +64,7 @@
         android:layout_width="327dp"
         android:layout_height="wrap_content"
         android:text="@string/lorem_ipsum"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="5dp"
         android:textSize="13dp"
         />

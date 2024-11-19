@@ -37,70 +37,288 @@
         android:background="@drawable/edittext_search"
         android:hint="Buscar producto"
         android:textColorHint="@color/gris"
-        android:textSize="15dp"/>
+        android:textSize="17dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:layout_gravity="center"
         >
-        <androidx.cardview.widget.CardView
-            android:layout_width="190dp"
-            android:layout_height="150dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="15dp"
-            app:cardCornerRadius="9dp"
-            android:layout_column="1"
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rowCount="2"
+            app:columnCount="2"
             >
 
-            <LinearLayout
-                android:padding="4dp"
-                android:layout_width="match_parent"
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_gravity="center"
+                android:layout_marginLeft="20dp"
                 >
 
-                <ImageView
-                    android:id="@+id/header_image"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/cafee"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/title"
-                    android:textSize="15dp"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Producto"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/header_image" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
 
-                <TextView
-                    android:id="@+id/subhead"
-                    android:textSize="23dp"
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="100$"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/title" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
 
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cafee"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Productos"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100$"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.gridlayout.widget.GridLayout>
 
     </ScrollView>
     
