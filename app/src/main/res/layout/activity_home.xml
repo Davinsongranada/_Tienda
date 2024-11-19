@@ -52,25 +52,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="15dp">
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="9dp"
+            android:layout_column="1"
+            >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:padding="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:orientation="vertical"
                 >
 
                 <ImageView
                     android:id="@+id/header_image"
                     android:layout_width="180dp"
                     android:layout_height="180dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/cafee"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:scaleType="centerCrop"
-                    />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title"
@@ -95,8 +97,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/title" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+
 
     </ScrollView>
     
