@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         bEnseres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),EnseresActivity.class));
                 bEnseres.setColorFilter(ContextCompat.getColor(HomeActivity.this, R.color.orange), PorterDuff.Mode.SRC_IN);
             }
         });
