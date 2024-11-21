@@ -38,6 +38,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        bAparatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AparatosActivity.class));
+            }
+        });
+
         bInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

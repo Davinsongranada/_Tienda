@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AparatosActivity"
+    android:background="@color/patelWhite"
     android:orientation="vertical">
 
 
@@ -88,10 +89,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
@@ -132,10 +134,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
@@ -176,10 +179,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
@@ -219,10 +223,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
@@ -265,10 +270,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
@@ -309,10 +315,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="100$"
+                        android:text="$100"
                         android:textSize="25dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="3dp"/>
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"/>
 
 
                 </LinearLayout>
