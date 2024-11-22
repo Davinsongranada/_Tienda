@@ -15,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class HomeActivity extends AppCompatActivity {
     ImageView bEnseres, bInicio, bAparatos;
+    ImageView getPreview, getPreview2, getPreview3, getPreview4,getPreview5, getPreview6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,59 @@ public class HomeActivity extends AppCompatActivity {
         bEnseres = findViewById(R.id.btnEnseres);
         bInicio = findViewById(R.id.btnInicio);
         bAparatos = findViewById(R.id.btnAparatos);
+        getPreview = findViewById(R.id.imgPreview);
+        getPreview2 = findViewById(R.id.imgPreview2);
+        getPreview3 = findViewById(R.id.imgPreview3);
+        getPreview4 = findViewById(R.id.imgPreview4);
+        getPreview5 = findViewById(R.id.imgPreview5);
+        getPreview6 = findViewById(R.id.imgPreview6);
+
+        //ImageView
+        getPreview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+        getPreview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+
+        getPreview3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+        getPreview4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+        getPreview5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+        getPreview6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), product.class));
+            }
+        });
+
+
+
 
         bEnseres.setOnClickListener(new View.OnClickListener() {
             @Override

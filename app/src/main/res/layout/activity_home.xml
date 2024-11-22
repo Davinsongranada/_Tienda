@@ -47,6 +47,7 @@
         >
 
         <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/GridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:rowCount="2"
@@ -54,6 +55,7 @@
             >
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/productoo"
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
                 app:cardCornerRadius="10dp"
@@ -71,6 +73,7 @@
 
 
                     <ImageView
+                        android:id="@+id/imgPreview"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
@@ -116,6 +119,7 @@
 
 
                     <ImageView
+                        android:id="@+id/imgPreview2"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
@@ -161,6 +165,7 @@
 
 
                     <ImageView
+                        android:id="@+id/imgPreview3"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
@@ -205,6 +210,7 @@
 
 
                     <ImageView
+                        android:id="@+id/imgPreview4"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
@@ -256,7 +262,8 @@
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
                         android:src="@drawable/cafee"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:id="@+id/imgPreview5"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -301,7 +308,8 @@
                         android:layout_height="160dp"
                         android:layout_marginTop="10dp"
                         android:src="@drawable/cafee"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:id="@+id/imgPreview6"/>
 
                     <TextView
                         android:layout_width="match_parent"

@@ -12,38 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+
         <activity
             android:name=".AparatosActivity"
             android:exported="false" />
+
         <activity
             android:name=".EnseresActivity"
             android:exported="false" />
+
         <activity
             android:name=".carrito"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
         <activity
-            android:name=".HomeActivity"
+            android:name=".product"
             android:exported="false" />
+
         <activity
             android:name=".SingInActivity"
             android:exported="false"
             android:theme="@style/Theme.MyApplication" />
+
         <activity
-            android:name=".LogInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".LogIn"
-            android:exported="false"
-            android:theme="@style/Theme.MyApplication" />
-        <activity
-            android:name=".product"
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,11 +1,16 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -22,11 +27,18 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+
 
     Button btnReg, btnLog;
     EditText rEmail, rPassword;
     TextView tvMessageR;
+    DBproducts pDB = new DBproducts(this, "DBproducts", null, 1);
+    SQLiteDatabase db = pDB.getWritableDatabase();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,12 +51,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         rEmail = findViewById(R.id.idEmail);
         rPassword = findViewById(R.id.idPassword);
         btnLog = findViewById(R.id.btnLogIn);
         btnReg = findViewById(R.id.btnRegister);
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+
+        //Boton de registro
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Lógica para inicio de sesión
         btnLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
