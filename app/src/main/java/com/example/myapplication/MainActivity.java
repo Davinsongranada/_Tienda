@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvMessageR;
     DBproducts pDB = new DBproducts(this, "DBproducts", null, 1);
     SQLiteDatabase db = pDB.getWritableDatabase();
+    CardView CardPreview;
 
 
     @Override
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnLog = findViewById(R.id.btnLogIn);
         btnReg = findViewById(R.id.btnRegister);
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        CardPreview = findViewById(R.id.pCardPreview);
 
 
         //Boton de registro
@@ -102,5 +105,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        CardPreview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
 }

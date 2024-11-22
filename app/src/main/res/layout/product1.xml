@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product1Activity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/nevera"
+        android:background="@drawable/border_img"
+        android:scaleType="centerCrop"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:text="Nevera"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:text="$1.569.000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnCarrito"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Agregar al carrito"
+        android:textSize="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/naranja"
+        />
+
+    <TextView
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:text="@string/detallesProd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:text="Nevera No Frost Titanio de 243 litros brutos es un excelente ejemplo de innovación y calidad en electrodomésticos de refrigeración. Con un elegante diseño y una manija integrada, esta nevera Haceb ofrece la combinación perfecta de estilo y funcionalidad."
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13dp"
+        />
+
+</LinearLayout>

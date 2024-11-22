@@ -12,32 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Product1Activity"
+            android:exported="false" />
         <activity
             android:name=".AparatosActivity"
             android:exported="false" />
-
         <activity
             android:name=".EnseresActivity"
             android:exported="false" />
-
         <activity
             android:name=".carrito"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".product"
             android:exported="false" />
-
         <activity
             android:name=".SingInActivity"
             android:exported="false"
             android:theme="@style/Theme.MyApplication" />
-
         <activity
             android:name=".HomeActivity"
             android:exported="true">

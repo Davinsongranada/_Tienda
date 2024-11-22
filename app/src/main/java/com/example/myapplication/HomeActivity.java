@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         getPreview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), product.class));
+                startActivity(new Intent(getApplicationContext(), Product1Activity.class));
             }
         });
 
